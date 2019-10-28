@@ -3,9 +3,11 @@ import os
 def discover(path):
 
     extensions = [
-        # '.c', '.cpp', '.java', '.py', #codigo fonte
-        # '.jpg', '.jpeg', '.png', '.bmp', '.gif', #imagens
-        # '.txt', '.doc', '.docx', '.pdf', #texto
+         '.c', '.cpp', '.java', '.py', '.js', '.php', #codigo fonte
+         '.jpg', '.jpeg', '.png', '.bmp', '.gif', #imagens
+         '.txt', '.doc', '.docx', '.pdf', '.srt', #texto
+         '.wav', '.mp3', '.mp4', '.mkv', '.flp', #som e vídeo
+         '.zip', '.tar.gz', '.rar' #arquivos compactados
     ]
 
     for dirpath, dirs, files in os.walk(path):
